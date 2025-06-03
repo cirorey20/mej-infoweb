@@ -1,0 +1,12 @@
+.footer {
+    background-color: var(--secondary-color); /* Negro */
+    color: var(--text-color-light);
+    padding: var(--spacing-md);
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: var(--spacing-xl); /* Espacio para separar del contenido */
+}
+
+.footer p {
+    margin: 0;
+}

@@ -1,0 +1,43 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparente para la sección hero */
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /* Para que quede encima de la hero section */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: var(--text-color-light); /* Texto blanco para la cabecera */
+}
+
+.header__logo {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--text-color-light);
+}
+.test-logo{
+    width: 75px;
+}
+
+/* Media queries para responsividad del header si fuera necesario un menú hamburguesa */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: var(--spacing-sm);
+        position: relative; /* O fixed si queremos que se quede arriba al scrollear */
+    }
+    .header__logo {
+        margin-bottom: var(--spacing-sm);
+    }
+    .test-logo{
+        width: 55px;
+    }
+    .navbar__list {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        text-align: center;
+    }
+}

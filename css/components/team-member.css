@@ -1,0 +1,28 @@
+.team-member-card {
+    background-color: white;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-md);
+    text-align: center;
+    width: 280px; /* Ancho fijo para las tarjetas de equipo */
+}
+
+.team-member-card__image {
+    width: 150px; /* Tamaño de la imagen del miembro */
+    height: 150px;
+    border-radius: var(--border-radius-lg); /* Circular */
+    object-fit: cover;
+    margin: 0 auto var(--spacing-sm) auto; /* Centrar y añadir margen inferior */
+    border: 3px solid var(--primary-color); /* Borde alrededor de la imagen */
+}
+
+.team-member-card__name {
+    font-size: 1.2em;
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+}
+
+.team-member-card__role {
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+}

@@ -1,0 +1,21 @@
+.navbar__list {
+    display: flex;
+    gap: var(--spacing-md); /* Espacio entre los ítems */
+}
+
+/* .navbar__item {} */
+
+.navbar__link {
+    color: var(--text-color-light);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 0.95em;
+    padding: var(--spacing-xs) 0;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+}

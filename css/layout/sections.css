@@ -1,0 +1,178 @@
+
+.section {
+    padding: var(--spacing-xl) 0; /* Relleno superior e inferior para todas las secciones */
+    text-align: center;
+}
+
+.container { /* Para centrar el contenido y limitar su ancho */
+    max-width: 1000px; /* Ancho máximo del contenido de la sección */
+    margin: 0 auto;
+    padding: 0 var(--spacing-md); /* Padding lateral para evitar que el contenido toque los bordes */
+}
+
+.section__title {
+    font-size: 2.5em;
+    margin-bottom: var(--spacing-lg);
+    text-transform: uppercase;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--background-light);
+    color: var(--text-color-dark);
+}
+
+.about-section__text {
+    max-width: 800px; /* Ancho del texto */
+    margin: 0 auto var(--spacing-md) auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.about-section__tagline {
+    font-family: var(--font-primary);
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: var(--spacing-lg);
+    color: var(--primary-color);
+}
+
+/* Meetings Section */
+.meetings-section {
+    background-color: var(--background-dark);
+    color: var(--text-color-light);
+}
+
+.meetings-section .section__title {
+    color: var(--text-color-light);
+}
+
+.meetings-info {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg); /* Espacio entre los ítems */
+    flex-wrap: wrap; /* Permite que los ítems se envuelvan en pantallas pequeñas */
+}
+
+.meetings-info__item {
+    flex-basis: 300px; /* Ancho base para cada ítem */
+    padding: var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-md);
+    text-align: left; /* Alinea el texto dentro del ítem */
+}
+
+.meetings-info__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: var(--spacing-sm);
+    filter: invert(1); /* Para iconos SVG blancos en fondo oscuro */
+}
+
+.meetings-info__subtitle {
+    font-size: 1.3em;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Connect Section */
+.connect-section {
+    background-color: var(--background-light);
+    color: var(--text-color-dark);
+}
+
+.connect-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Forms Section */
+.forms-section {
+    background-color: var(--background-dark);
+    color: var(--text-color-light);
+}
+
+.forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    text-align: left; /* Contenido de los bloques de formulario alineado a la izquierda */
+}
+
+.form-block {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para que el botón quede abajo */
+}
+
+.form-block h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.5em;
+}
+
+.form-block__subtitle {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-block p {
+    font-size: 0.95em;
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1; /* Para que el párrafo ocupe el espacio disponible */
+}
+
+.form-block .button {
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+    margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--background-light);
+    color: var(--text-color-dark);
+}
+
+.team-members-grid {
+    display: flex; /* Usamos flexbox para centrar y manejar el espaciado */
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap; /* Para que los miembros del equipo se envuelvan en pantallas pequeñas */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+    .section__title {
+        font-size: 2em;
+    }
+    .meetings-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .meetings-info__item {
+        width: 100%; /* Ocupa el ancho completo en móviles */
+        text-align: center; /* Centra el texto en móviles */
+    }
+    .meetings-info__icon {
+        margin: 0 auto var(--spacing-sm) auto; /* Centra el icono */
+    }
+    .forms-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+    .form-block .button {
+        align-self: center; /* Centra el botón en móviles */
+    }
+    .team-members-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}

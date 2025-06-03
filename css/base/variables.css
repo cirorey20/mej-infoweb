@@ -1,0 +1,31 @@
+:root {
+    /* Colores */
+    --primary-color: #f70000; /* Un rojo similar al logo de Hillsong */
+    --secondary-color: #000000; /* Negro para fondos oscuros */
+    --accent-color: #6c757d;    /* Gris para texto secundario */
+    --text-color-light: #ffffff; /* Texto blanco */
+    --text-color-dark: #333333; /* Texto oscuro */
+    --background-light: #f8f8f8; /* Fondo claro */
+    --background-dark: #222222; /* Fondo oscuro */
+    --border-color: #dddddd;
+
+    /* Tipografía */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+
+    /* Espaciados (basados en un sistema de 8px o 10px) */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 48px;
+    --spacing-xl: 80px;
+
+    /* Sombras */
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 50%; /* Para imágenes circulares */
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEJ - Casa De Oración</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/logo-cuadrado.png" class="test-logo" alt="">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#about" class="navbar__link">SOBRE NOSOTROS</a></li>
+                <li class="navbar__item"><a href="#meetings" class="navbar__link">REUNIONES</a></li>
+                <li class="navbar__item"><a href="#gallery" class="navbar__link">GALERÍA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-section__content">
+            <h1 class="hero-section__title">MEJ</h1>
+            <p class="hero-section__subtitle">Ministerio Ejército de Jesucristo</p>
+        </div>
+    </section>
+
+    <section class="section about-section" id="about">
+        <div class="container">
+            <p class="about-section__text">Somos una iglesia joven en espíritu e inclusiva que da la bienvenida a todas las personas sin importar su estilo de vida o trasfondo.</p>
+            <p class="about-section__text">Amamos a Dios y a las personas. Queremos ser las manos y pies de Jesús para que muchos puedan encontrar a Dios, vida, propósito y esperanza, creando un ambiente en el que cualquier persona pueda sentirse como en casa.</p>
+            <p class="about-section__tagline">Vení tal como sos.</p>
+        </div>
+    </section>
+
+    <section class="section meetings-section" id="meetings">
+        <div class="container">
+            <h2 class="section__title">NUESTRAS REUNIONES LOS SABADOS</h2>
+            <div class="meetings-info">
+                <div class="meetings-info__item">
+                    <img src="img/clock-svgrepo-com.svg" alt="Horarios" class="meetings-info__icon">
+                    <h3 class="meetings-info__subtitle">Horarios de Reuniones</h3>
+                    <p>19:00 a 21:00hs</p>
+                </div>
+                <div class="meetings-info__item">
+                    <img src="img/monitor-svgrepo-com.svg" alt="Online" class="meetings-info__icon">
+                    <h3 class="meetings-info__subtitle">Reuniones En Línea</h3>
+                    <p>16:00 a 17:00hs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section connect-section" id="gallery">
+        <div class="container">
+            <h2 class="section__title">GALERÍA</h2>
+            <div class="connect-cards-grid">
+                <div class="card connect-card">
+                    <img src="img/reunion-a.jpg" alt="He Decidido" class="card__image">
+                    <h3 class="card__title">Ungimiento</h3>
+                </div>
+                <div class="card connect-card">
+                    <img src="img/reunion-b.jpg" alt="Grupos de Conexión" class="card__image">
+                    <h3 class="card__title">Enseñanza</h3>
+                </div>
+                <div class="card connect-card">
+                    <img src="img/reunion-c.jpg" alt="Voluntariado" class="card__image">
+                    <h3 class="card__title">Experiencias</h3>
+                </div>
+                <div class="card connect-card">
+                    <img src="img/reunion-d.jpg" alt="He Decidido" class="card__image">
+                    <h3 class="card__title">Reflexión</h3>
+                </div>
+                <div class="card connect-card">
+                    <img src="img/reunion-e.jpg" alt="Grupos de Conexión" class="card__image">
+                    <h3 class="card__title">Testimonios</h3>
+                </div>
+                <div class="card connect-card">
+                    <img src="img/reunion-f.jpg" alt="Voluntariado" class="card__image">
+                    <h3 class="card__title">Oración</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section forms-section">
+        <div class="container forms-grid">
+            <div class="form-block">
+                <h3>He decidido seguir a Jesús</h3>
+                <p>Si esta es la primera vez que has escuchado acerca de Jesús o te estás reconciliando con Él y estás interesado en que nuestro equipo se ponga en contacto contigo, haz click aquí.</p>
+                <a onclick="abrirWhatsApp()" class="button button--outline">QUIERO SABER MAS</a>
+            </div>
+            <div class="form-block">
+                <h3>¿Podemos orar por vos?</h3>
+                <p class="form-block__subtitle">PETICIONES DE ORACIÓN</p>
+                <p>Como iglesia creemos en el poder de la oración. Cada domingo oramos juntos por las necesidades de las personas en nuestra iglesia. Déjanos aquí tu pedido de oración.</p>
+                <a onclick="abrirWhatsApp()" class="button button--primary">ENVIAR</a>
+            </div>
+            <div class="form-block">
+                <h3>¿Estás agradecido por algo?</h3>
+                <p class="form-block__subtitle">AGRADECIMIENTOS</p>
+                <p>Creemos en el poder de un corazón agradecido. Como iglesia, nos encanta compartir lo que Dios está haciendo en medio nuestro. Cuéntanos lo que Dios está haciendo en tu vida.</p>
+                <a onclick="abrirWhatsApp()" class="button button--primary">ENVIAR</a>
+            </div>
+            
+        </div>
+        <!-- <div class="hero-section__social-icons">
+            <a href="#" class="social-icon"><img src="img/icon-facebook.svg" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="img/icon-instagram.svg" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="img/icon-youtube.svg" alt="YouTube"></a>
+            <a href="#" class="social-icon"><img src="img/icon-spotify.svg" alt="Spotify"></a>
+        </div> -->
+    </section>
+
+    <section class="section team-section">
+        <div class="container">
+            <h2 class="section__title">LÍDERES</h2>
+            <div class="team-members-grid">
+                <div class="team-member-card">
+                    <img src="img/roberto-rey-compri.jpg" alt="Roberto Rey" class="team-member-card__image">
+                    <h4 class="team-member-card__name">Roberto Rey</h4>
+                    <p class="team-member-card__role">Pastor</p>
+                </div>
+                <div class="team-member-card">
+                    <img src="img/celia-benitez-compri.jpg" alt="Celia Benitez" class="team-member-card__image">
+                    <h4 class="team-member-card__name">Celia Benitez</h4>
+                    <p class="team-member-card__role">Lider</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MEJ Buenos Aires. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js">
+    </script>
+</body>
+</html>

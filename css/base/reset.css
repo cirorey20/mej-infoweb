@@ -1,0 +1,45 @@
+/* Resetea márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* ¡Esta es la clave para el desplazamiento suave! */
+}
+
+/* Elimina la decoración de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Elimina la decoración de enlaces por defecto */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Asegura que las imágenes no se desborden y sean bloques */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Resetea estilos de formularios y botones */
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilos básicos para el body */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,73 @@
+.hero-section {
+    background-image: url('../../img/hero-bg.jpg'); /* Ajusta la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ocupa la altura completa de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-light);
+    text-align: center;
+    position: relative; /* Necesario para que el header absoluto se posicione sobre ella */
+}
+
+.hero-section::before { /* Capa oscura para mejorar la legibilidad del texto */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad si es necesario */
+    z-index: 1;
+}
+
+.hero-section__content {
+    position: relative; /* Para que esté por encima de la capa oscura */
+    z-index: 2;
+    padding: var(--spacing-md);
+}
+
+.hero-section__title {
+    font-size: 4em; /* Grande y prominente */
+    margin-bottom: var(--spacing-sm);
+    text-shadow: var(--shadow-md);
+}
+
+.hero-section__subtitle {
+    font-size: 1.5em;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero-section__social-icons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.social-icon img {
+    width: 48px; /* Tamaño de los iconos sociales */
+    height: 48px;
+    border-radius: var(--border-radius-lg); /* Hacerlos circulares */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    padding: var(--spacing-xs);
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .hero-section__title {
+        font-size: 2.5em;
+    }
+    .hero-section__subtitle {
+        font-size: 1.2em;
+    }
+    .social-icon img {
+        width: 38px;
+        height: 38px;
+    }
+}
