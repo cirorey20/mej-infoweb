@@ -1,11 +1,12 @@
 .header {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparente para la sección hero */
+    background-color: rgba(0, 0, 0, 0.867); /* Semi-transparente para la sección hero */
     padding: var(--spacing-sm) var(--spacing-md);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute; /* Para que quede encima de la hero section */
     width: 100%;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -25,9 +26,11 @@
 /* Media queries para responsividad del header si fuera necesario un menú hamburguesa */
 @media (max-width: 768px) {
     .header {
+        position: sticky;
         flex-direction: column;
         padding: var(--spacing-sm);
-        position: relative; /* O fixed si queremos que se quede arriba al scrollear */
+        /* O fixed si queremos que se quede arriba al scrollear */
+        /* position: relative;  */
     }
     .header__logo {
         margin-bottom: var(--spacing-sm);
